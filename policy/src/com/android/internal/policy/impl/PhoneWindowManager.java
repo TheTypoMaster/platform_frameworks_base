@@ -2620,6 +2620,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     voiceIntent.putExtra(RecognizerIntent.EXTRA_SECURE, true);
                 }
                 startActivityAsUser(voiceIntent, UserHandle.CURRENT_OR_SELF);
+
             }
         } else if (keyCode == KeyEvent.KEYCODE_BACK) {
             if (Settings.Secure.getIntForUser(mContext.getContentResolver(),
